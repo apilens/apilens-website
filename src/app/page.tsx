@@ -153,6 +153,7 @@ export default function Home() {
                         GitHub
                     </Link>
 
+
                     <Link
                         href="mailto:hello@apilens.ai"
                         style={{
@@ -195,7 +196,7 @@ export default function Home() {
                 <p
                     style={{
                         fontFamily: "var(--font-body), system-ui, sans-serif",
-                        color: "#333333",
+                        color: "#444444",
                         fontSize: "0.75rem",
                         fontWeight: 500,
                         letterSpacing: "0.02em",
