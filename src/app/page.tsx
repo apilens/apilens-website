@@ -18,13 +18,13 @@ export default function Home() {
                 style={{
                     position: "absolute",
                     inset: 0,
+                    zIndex: 0, // 👈 behind content
 
                     backgroundImage: `
-                      linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)
+      linear-gradient(to right, rgba(255,255,255,0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.15) 1px, transparent 1px)
     `,
                     backgroundSize: "4rem 4rem",
-
                     filter: "drop-shadow(0 0 6px rgba(255,255,255,0.4))",
 
                     maskImage:
@@ -39,6 +39,7 @@ export default function Home() {
             <main
                 style={{
                     position: "relative",
+                    zIndex: 1,
                     flex: 1,
                     display: "flex",
                     flexDirection: "column",
@@ -47,20 +48,31 @@ export default function Home() {
                     padding: "2rem",
                 }}
             >
-                {/* Logo */}
-                <div style={{marginBottom: "1rem"}}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+
+                <div
+                    style={{
+                        position: "relative",
+                        zIndex: 2,
+                        background: "rgba(0,0,0,0.8)",
+                        borderRadius: "50%",
+                        padding: "10px",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                    }}
+                >
                     <img
                         src="/logo.png"
                         alt="ApiLens"
                         style={{
                             width: "88px",
                             height: "88px",
-                            borderRadius: "20px",
+                            borderRadius: "50%",
                             filter: "brightness(1.3)",
                         }}
                     />
                 </div>
+
 
                 {/* Brand Name */}
                 <h1
