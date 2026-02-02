@@ -88,7 +88,7 @@ export default function Home() {
                         fontWeight: 400,
                         letterSpacing: "0.01em",
                     }}
-                >Full visibility into api performance, errors, and latency.
+                >Full visibility into api performance, errors, and latency
                     {/*api monitoring & analytics*/}
                 </p>
 
