@@ -233,9 +233,18 @@ export default function Home() {
                         fontSize: "0.75rem",
                         fontWeight: 500,
                         letterSpacing: "0.02em",
+                        display: "flex", // Use flexbox for single-line alignment
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "0.5rem", // Add gap between items
+                        flexWrap: "wrap", // Allow wrapping on smaller screens
                     }}
                 >
-                    Open Source · Built for Developers
+                    <span>Open Source · Built for Developers</span>
+                    {" · "}
+                    <Link href="/privacy" style={{ color: "inherit", textDecoration: "none" }}>Privacy Policy</Link>
+                    {" · "}
+                    <Link href="/terms" style={{ color: "inherit", textDecoration: "none" }}>Terms and Conditions</Link>
                 </p>
             </footer>
         </div>
