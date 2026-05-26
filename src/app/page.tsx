@@ -1002,11 +1002,11 @@ export default function Home() {
                   marginBottom: "1.75rem",
                 }}
               >
-                Integrate APILens into your stack in under 60 seconds. No complex configuration, no agents to manage, no YAML files.
+                Integrate APILens into your Python app in under 60 seconds. One pip install, one middleware line — no YAML, no config files.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
                 {[
-                  "Works with Express, Fastify, Next.js, Django, FastAPI, Go",
+                  "Works with FastAPI, Django, Flask, Express, Go, and more",
                   "Automatic request / response capture",
                   "Zero impact on your API performance",
                   "Structured logs — JSON ready for any log sink",
@@ -1056,7 +1056,7 @@ export default function Home() {
                 }}
               >
                 <span style={{ fontSize: "0.75rem", color: "#444", fontFamily: "var(--font-display)" }}>
-                  Node.js — Express
+                  Python — FastAPI
                 </span>
                 <div style={{ marginLeft: "auto" }}>
                   <span
@@ -1064,12 +1064,12 @@ export default function Home() {
                       fontSize: "0.6875rem",
                       padding: "0.15rem 0.5rem",
                       borderRadius: "4px",
-                      background: "rgba(99,102,241,0.1)",
-                      color: "#818cf8",
-                      border: "1px solid rgba(99,102,241,0.2)",
+                      background: "rgba(52,211,153,0.1)",
+                      color: "#34d399",
+                      border: "1px solid rgba(52,211,153,0.2)",
                     }}
                   >
-                    JS / TS
+                    Python
                   </span>
                 </div>
               </div>
@@ -1081,36 +1081,51 @@ export default function Home() {
                   lineHeight: 1.8,
                 }}
               >
-                <div style={{ color: "#444" }}>{"# Install"}</div>
+                <div style={{ color: "#444" }}># Install</div>
                 <div>
-                  <span style={{ color: "#818cf8" }}>npm</span>
+                  <span style={{ color: "#34d399" }}>pip</span>
                   <span style={{ color: "#ccc" }}> install </span>
-                  <span style={{ color: "#86efac" }}>@apilens/node</span>
+                  <span style={{ color: "#86efac" }}>apilens</span>
                 </div>
                 <div style={{ height: "0.75rem" }} />
-                <div style={{ color: "#444" }}>{"# Add to your app"}</div>
+                <div style={{ color: "#444" }}># Add to your FastAPI app</div>
                 <div>
-                  <span style={{ color: "#c084fc" }}>import</span>
-                  <span style={{ color: "#ccc" }}>{" { apiLens } "}</span>
                   <span style={{ color: "#c084fc" }}>from</span>
-                  <span style={{ color: "#86efac" }}>{" '@apilens/node'"}</span>
+                  <span style={{ color: "#ccc" }}> fastapi </span>
+                  <span style={{ color: "#c084fc" }}>import</span>
+                  <span style={{ color: "#ccc" }}> FastAPI</span>
+                </div>
+                <div>
+                  <span style={{ color: "#c084fc" }}>from</span>
+                  <span style={{ color: "#ccc" }}> apilens </span>
+                  <span style={{ color: "#c084fc" }}>import</span>
+                  <span style={{ color: "#6ee7b7" }}> APILensMiddleware</span>
+                </div>
+                <div style={{ height: "0.5rem" }} />
+                <div>
+                  <span style={{ color: "#6ee7b7" }}>app</span>
+                  <span style={{ color: "#ccc" }}> = </span>
+                  <span style={{ color: "#93c5fd" }}>FastAPI</span>
+                  <span style={{ color: "#ccc" }}>()</span>
                 </div>
                 <div style={{ height: "0.5rem" }} />
                 <div>
                   <span style={{ color: "#6ee7b7" }}>app</span>
                   <span style={{ color: "#ccc" }}>.</span>
-                  <span style={{ color: "#93c5fd" }}>use</span>
-                  <span style={{ color: "#ccc" }}>{"("}</span>
-                  <span style={{ color: "#6ee7b7" }}>apiLens</span>
-                  <span style={{ color: "#ccc" }}>{"({"}</span>
+                  <span style={{ color: "#93c5fd" }}>add_middleware</span>
+                  <span style={{ color: "#ccc" }}>(</span>
                 </div>
                 <div style={{ paddingLeft: "1.25rem" }}>
-                  <span style={{ color: "#fbbf24" }}>apiKey</span>
-                  <span style={{ color: "#ccc" }}>{": "}</span>
-                  <span style={{ color: "#86efac" }}>{"process.env.APILENS_KEY"}</span>
+                  <span style={{ color: "#6ee7b7" }}>APILensMiddleware</span>
+                  <span style={{ color: "#ccc" }}>,</span>
+                </div>
+                <div style={{ paddingLeft: "1.25rem" }}>
+                  <span style={{ color: "#fbbf24" }}>api_key</span>
+                  <span style={{ color: "#ccc" }}>=</span>
+                  <span style={{ color: "#86efac" }}>{'"your-api-key"'}</span>
                 </div>
                 <div>
-                  <span style={{ color: "#ccc" }}>{"})"}</span>
+                  <span style={{ color: "#ccc" }}>)</span>
                 </div>
                 <div style={{ height: "0.75rem" }} />
                 <div style={{ color: "#34d399" }}>{"✓ Dashboard is live — that's it."}</div>
