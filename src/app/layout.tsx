@@ -17,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ApiLens - API monitoring & analytics",
+  title: "APILens - API monitoring & analytics",
   description:
-    "Open-source REST API monitoring and observability tool for developers. Track, debug, and optimize your APIs.",
+    "APILens gives you full visibility into API performance, errors, and latency. Monitor, debug, and optimize your APIs in real time.",
 };
 
 export default function RootLayout({

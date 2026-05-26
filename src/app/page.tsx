@@ -265,19 +265,20 @@ export default function Home() {
             >
               <img
                 src="/logo.png"
-                alt="apiLens"
-                style={{ width: "28px", height: "28px", borderRadius: "6px" }}
+                alt="APILens"
+                style={{ width: "28px", height: "28px", borderRadius: "6px", display: "block" }}
               />
               <span
                 style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "1.125rem",
-                  fontWeight: 600,
+                  fontWeight: 700,
                   color: "#fff",
-                  letterSpacing: "-0.03em",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1,
                 }}
               >
-                apiLens
+                APILens
               </span>
             </Link>
 
@@ -515,7 +516,7 @@ export default function Home() {
                   fontFamily: "var(--font-display)",
                 }}
               >
-                apiLens — API Monitor
+                APILens — API Monitor
               </span>
               <div style={{ marginLeft: "auto", display: "flex", gap: "0.5rem" }}>
                 <span
@@ -1097,7 +1098,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span style={{ color: "#c084fc" }}>from</span>
-                  <span style={{ color: "#ccc" }}> apilens </span>
+                  <span style={{ color: "#ccc" }}> APILens </span>
                   <span style={{ color: "#c084fc" }}>import</span>
                   <span style={{ color: "#6ee7b7" }}> APILensMiddleware</span>
                 </div>
@@ -1439,18 +1440,20 @@ export default function Home() {
               >
                 <img
                   src="/logo.png"
-                  alt="apiLens"
-                  style={{ width: "22px", height: "22px", borderRadius: "4px" }}
+                  alt="APILens"
+                  style={{ width: "22px", height: "22px", borderRadius: "4px", display: "block" }}
                 />
                 <span
                   style={{
                     fontFamily: "var(--font-display)",
                     fontSize: "0.9375rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "#fff",
+                    letterSpacing: "-0.02em",
+                    lineHeight: 1,
                   }}
                 >
-                  apiLens
+                  APILens
                 </span>
               </div>
               <p style={{ fontSize: "0.8125rem", color: "#333" }}>
