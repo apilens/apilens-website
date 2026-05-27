@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
         </h1>
 
         <p style={{ marginBottom: "1.5rem", lineHeight: 1.7 }}>
-          This Privacy Policy describes how ApiLens collects, uses, and discloses your information when you use our website.
+          This Privacy Policy describes how APILens collects, uses, and discloses your information when you use our website.
         </p>
 
         <h2
